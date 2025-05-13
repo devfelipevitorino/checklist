@@ -3,7 +3,7 @@
   --cor-painel: #1e1e1e;
   --cor-texto: #ffffff;
   --cor-secundaria: #b0b0b0;
-  --cor-destaque: #2196f3;
+  --cor-destaque: rgb(142, 33, 243);
   --cor-input: #2c2c2c;
   --cor-borda: #444;
 }
@@ -37,6 +37,16 @@ input[type="text"] {
   width: calc(100% - 24px);
 }
 
+input[type="date"] {
+  background-color: var(--cor-input);
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: calc(100% - 24px);
+}
+
 input[type="submit"] {
   background-color: var(--cor-destaque);
   color: var(--cor-texto);
@@ -46,10 +56,11 @@ input[type="submit"] {
   cursor: pointer;
   font-weight: bold;
   margin-top: 10px;
+  width: 100%;
 }
 
 input[type="submit"]:hover {
-  background-color: #1976d2;
+  background-color: #7919d2;
 }
 
 .atividade input[type="checkbox"] {
