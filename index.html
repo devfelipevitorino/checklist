@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Checklist</title>
+  </head>
+  <body>
+    <div class="cadastro">
+      <input
+        type="text"
+        placeholder="Informe o nome da atividade"
+        id="nome"
+        required
+      />
+      <input
+        type="text"
+        placeholder="Informe a data da atividade"
+        id="data"
+        required
+      />
+      <input onclick="cadastrarAtividade()" type="submit" value="Adicionar" />
+    </div>
+    <div class="lista">
+      <h1>Atividades</h1>
+      <div class="atividade"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
